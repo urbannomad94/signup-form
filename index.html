@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="title-container">
+            <img src="/assets/surf-logo.svg" alt="surf logo">
+            <h1>SURF</h1>
+        </div>
+        <span class="credit">Photo by <a href="https://unsplash.com/@sotti">Shifaaz Shamoon</a> on <a href="https://unsplash.com/photos/okVXy9tG3KY">Unsplash</a></span>
+    </header>
+    <section class="sign-up">
+        <section>
+            <p>This is not a real online service! You know you've always wanted to try surfing. Well, now is your chance. Sign up now for a free lesson.</p>
+            <br>
+            <p>You know what to do.</p>
+        </section>
+        <section>
+            <h2>Let's do this!</h2>
+            <form action="#">
+                <div class="form-left">
+                    <div class="input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input">
+                        <label for="pw">PASSWORD</label>
+                        <input type="password" id="pw">
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <div class="input">
+                        <label for="phone-num">PHONE NUMBER</label>
+                        <input type="tel" id="phone-num">
+                    </div>
+                    <div class="input">
+                        <label for="pw-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pw-confirm">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <input type="submit" value="Create Account">
+            <span>Already have and account? <a href="#">Log in</a></span>
+        </section>
+    </section>
 </body>
 </html>
