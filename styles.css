@@ -21,7 +21,7 @@ body * {
 header {
   width: 35%;
   height: 100vh;
-  background-image: url(/assets/beach.jpg);
+  background-image: url(https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2902&q=80);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ section.sign-up {
 section.sign-up section:first-child,
 section.sign-up section:last-child {
   background-color: rgb(249, 250, 251);
-  height: 35%;
+  min-height: 35%;
 }
 
 section.sign-up section:nth-child(2) {
@@ -136,4 +136,22 @@ section.sign-up section:last-child input {
   border-radius: 5px;
   border: none;
   margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid rgb(31, 77, 86);
 }
